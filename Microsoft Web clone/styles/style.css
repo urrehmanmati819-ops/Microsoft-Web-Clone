@@ -1,0 +1,260 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.nav-section {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    padding: 0 80px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo,
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 20px;
+    width: 100px;
+}
+
+.nav-logo a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.nav-links p {
+    margin-left: 15px;
+    margin-top : 25px;
+    font-size: 12px;
+}
+
+.nav-links p:hover,
+.nav-logo a:hover{
+    text-decoration : underline 2px solid black;
+}
+
+.banner-section{
+    background-image : url(../media/Highlight-Hero-Windows11-GlobalLaunch_VP2-859x540.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner-content {
+    color: white;
+    margin: 80px;
+    max-width: 400px;
+}
+
+.banner-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.banner-content button {
+    background-color: rgb(45, 80, 235);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius : 3px;
+}
+
+.banner-content button:hover {
+    background-color: rgb(34, 34, 233);
+    cursor : pointer;
+}
+
+.products-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: none;
+    gap: 20px;
+    overflow-x: none;
+    padding: 80px 50px;
+    border-radius : 3px;
+}
+
+.card-content {
+    flex: 1;
+    max-width : 23%;
+    height : 450px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    justify-content : space-between;
+    flex-direction: column;
+   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.card-content img {
+    max-width: 100%;
+    height: auto;
+    padding-top : 0px;
+}
+
+.card-content h3 , p, button{
+    padding: 5px;
+    
+}
+
+.card-content button {
+    background-color: rgb(45, 80, 235);
+    margin-top: 50px;
+    margin-left : 15px;
+    padding: 10px;
+    color : white;
+    border : none;
+    justify-content : flex-start;
+    max-width : 70%;
+    flex-wrap : none;
+    border-radius: 3px;
+    font-weight : bold;
+    margin-bottom : 10px;
+}
+
+.card-content button:hover{
+    cursor: pointer;
+    background-color: rgb(34, 34, 233);
+}
+
+
+.one-note{
+    background-image : url("../media/Highlight-PC-SMB-OneNote_VP2-859x540.webp");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.learn-onenote{
+    background-color : white;
+    padding : 50px;
+    margin : 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-onenote h3, p{
+    padding-bottom : 35px;
+}
+
+.learn-onenote button {
+    background-color: rgb(45, 80, 235);
+    color: white;
+    padding : 10px;
+    max-width : 30%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    justify-content : flex-start;
+    cursor: pointer;
+}
+
+.learn-onenote button:hover {
+    background-color: rgb(34, 34, 233);
+    cursor: pointer;
+}
+
+.follow-microsoft{
+    display : flex;
+    justify-content : space-between;
+    max-width : 20%;
+    margin-left : 50px;
+}
+
+.follow-microsoft img{
+    width : 30px;
+    height : 30px;
+}
+
+.footer{
+    color : rgb(77, 74, 74);
+    background-color: rgb(226, 223, 223);
+    padding-top : 30px;
+}
+
+.foot-head{
+    display : flex;
+    justify-content : space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer-links {
+    width : 23%;
+}
+
+.footer-links p{
+    font-size : 10px;
+    margin-top : 0.1px;
+    line-height : 1;
+    padding: 10px;
+}
+
+.footer-links p:hover {
+    color: black;
+    text-decoration : underline;
+    cursor : pointer;
+}
+
+.foot-bottom{
+    display : flex;
+    justify-content : space-between;
+    width : 95%;
+    font-size : 9px;  
+    margin-top: 10px;  
+}
+
+.left-foot{
+    display: flex;
+    flex-direction: row;
+    margin-left : 20px;
+    justify-content: space-between;
+}
+
+.left-foot p:hover,
+.right-foot p:hover {
+    text-decoration : underline;
+}
+
+.right-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
